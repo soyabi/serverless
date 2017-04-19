@@ -1,3 +1,80 @@
+# 1.11.0 (12.04.2017)
+- Add CloudWatch Logs Event Source (#3407)
+- Add version description from function (#3429)
+- Add support for packaging functions individually (#3433)
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.10.2...v1.11.0)
+
+
+# 1.10.2 (3.04.2017)
+- Add support for packaging functions individually at the function level (#3433)
+
+# 1.10.1 (30.03.2017)
+- Update serverless-alpha detection (#3423)
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.10.0...v1.10.1)
+
+
+# 1.10.0 (29.03.2017)
+- Fixed bug with ANY http method (#3304)
+- Reduced unit test time significantly (#3359)
+- Added AWS Groovy Gradle Template (#3353)
+- Reduce dependency tree depth between IAM & Log Groups (#3360)
+- Added entrypoints for plugins (#3327)
+- Removed pre-install script (#3385)
+- Expose plugin hooks  (#2985)
+- Add support for Node 6 runtime in invoke local (#3403)
+- Updated Node.js templates to include Node 6 runtime by default (#3406)
+- Removed breaking changes warnings (#3418)
+- Auto loading serverless-alpha plugin (#3373)
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.9.0...v1.10.0)
+
+# 1.9.0 (14.03.2017)
+- Fixed bug with serverless plugins lookup (#3180)
+- Fixed bug with `serverless create` generated .gitignore (#3355)
+- Fixed bug with authorizer claims (#3187)
+- Added support for CloudFormation service roles  (#3147)
+- Improvements for invoke local plugin (#3037)
+- Added Azure Functions Node.js template in `serverless create` (#3334)
+- Allow DynamoDB and Kinesis streams to use GetAtt/ImportValue (#3111)
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.8.0...v1.9.0)
+
+
+# 1.8.0 (28.02.2017)
+## Non-Breaking Changes
+
+- Fixed bug with deployment progress monitoring (#3297)
+- Fixed "too many open files" error (#3310)
+- Fixed bug with functions lists loaded from a separate file using Serverless Variables (#3186)
+
+## Breaking Changes
+
+#### Removed IamPolicyLambdaExecution Resource
+We've removed the `IamPolicyLambdaExecution` resource template and replaced it with inline policy within the role as it's been causing issues with VPC and bloating the CF template. This is a breaking change only for users who are depending on that resource with `Ref` or similar CF intrinsic functions.
+
+#### Changed displayed function name for `sls info`
+The function name displayed when you run `sls info` is now the short function name as found in `serverless.yml` rather than the actual lambda name to keep it more provider agnostic. This could be breaking for any user who is depending or parsing the CLI output.
+
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.7.0...v1.8.0)
+
+# 1.7.0 (14.02.2017)
+- Added CloudWatch event source (#3102)
+- Fixed average functions duration calculation in "sls metrics" output (#3067)
+- Added SLS_IGNORE_WARNINGS flag and logging upcoming breaking changes (#3217)
+- Reduced memory consumption during zipping process (#3220)
+- Fixed bug when using LogGroup resources with custom roles (#3213)
+
+## Meta
+- [Comparison since last release](https://github.com/serverless/serverless/compare/v1.6.1...v1.7.0)
+
 # 1.6.1 (31.01.2017)
 A minimal patch release that fixes an issue with rendering README.md on npm registry.
 

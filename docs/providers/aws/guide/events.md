@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/guide/events)
 <!-- DOCS-SITE-LINK:END -->
 
-# Events
+# AWS - Events
 
 Simply put, events are the things that trigger your functions to run.
 
@@ -37,7 +37,7 @@ functions:
 
 Events are objects, which can contain event-specific information.
 
-The `events` property is an array, because it's possible for functions to be triggered by multple events, as shown
+The `events` property is an array, because it's possible for functions to be triggered by multiple events, as shown.
 
 You can set multiple Events per Function, as long as that is supported by AWS.
 

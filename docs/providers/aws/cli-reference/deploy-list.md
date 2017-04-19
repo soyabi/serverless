@@ -1,7 +1,7 @@
 <!--
 title: Serverless Framework Commands - AWS Lambda - Deploy List
 menuText: Deploy List
-menuOrder: 6
+menuOrder: 7
 description: List your previous CloudFormation deployments
 layout: Doc
 -->
@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy-list)
 <!-- DOCS-SITE-LINK:END -->
 
-# Deploy List
+# AWS - Deploy List
 
 The `sls deploy list` command will list your recent deployments available in your S3 deployment bucket. It will use stage and region from the provider config and show the timestamp of each deployment so you can roll back if necessary using `sls rollback`.
 

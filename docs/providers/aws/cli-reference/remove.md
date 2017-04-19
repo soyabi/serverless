@@ -1,7 +1,7 @@
 <!--
 title: Serverless Framework Commands - AWS Lambda - Remove
 menuText: Remove
-menuOrder: 13
+menuOrder: 14
 description: Remove a deployed Service and all of its AWS Lambda Functions, Events and Resources
 layout: Doc
 -->
@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/remove)
 <!-- DOCS-SITE-LINK:END -->
 
-# Remove
+# AWS - Remove
 
 The `sls remove` command will remove the deployed service, defined in your current working directory,  from the provider.
 

@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/install)
 <!-- DOCS-SITE-LINK:END -->
 
-# Install
+# AWS - Install
 
 Installs a service from a GitHub URL in the current working directory.
 
@@ -46,7 +46,7 @@ This example will download the .zip file of the `serverless-crud` service from G
 ### Installing a service from a directory in a GitHub URL
 
 ```bash
-serverless install --url https://github.com/serverless/examples/tree/master/rest-api-with-dynamodb
+serverless install --url https://github.com/serverless/examples/tree/master/aws-node-rest-api-with-dynamodb
 ```
 
-This example will download the `rest-api-with-dynamodb` service from GitHub.
+This example will download the `aws-node-rest-api-with-dynamodb` service from GitHub.

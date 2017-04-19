@@ -1,7 +1,7 @@
 <!--
 title: Serverless Framework Commands - AWS Lambda - Info
 menuText: Info
-menuOrder: 11
+menuOrder: 12
 description: Display information about your deployed service and the AWS Lambda Functions, Events and AWS Resources it contains.
 layout: Doc
 -->
@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/info)
 <!-- DOCS-SITE-LINK:END -->
 
-# Info
+# AWS - Info
 
 Displays information about the deployed service.
 

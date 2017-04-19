@@ -1,7 +1,7 @@
 <!--
 title: Serverless Framework Commands - AWS Lambda - Metrics
 menuText: Metrics
-menuOrder: 10
+menuOrder: 11
 description: View metrics of your AWS Lambda Function within your terminal using the Serverless Framework
 layout: Doc
 -->
@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/metrics)
 <!-- DOCS-SITE-LINK:END -->
 
-# Metrics
+# AWS - Metrics
 
 Lets you watch the metrics of a specific function.
 

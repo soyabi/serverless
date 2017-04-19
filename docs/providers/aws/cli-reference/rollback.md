@@ -1,7 +1,7 @@
 <!--
 title: Serverless Rollback CLI Command
 menuText: Rollback
-menuOrder: 12
+menuOrder: 13
 description: Rollback the Serverless service to a specific deployment
 layout: Doc
 -->
@@ -11,7 +11,7 @@ layout: Doc
 <!-- DOCS-SITE-LINK:END -->
 
 
-# Rollback
+# AWS - Rollback
 
 Rollback the Serverless service to a specific deployment.
 

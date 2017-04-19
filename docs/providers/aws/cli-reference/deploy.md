@@ -1,7 +1,7 @@
 <!--
 title: Serverless Framework Commands - AWS Lambda - Deploy
 menuText: Deploy
-menuOrder: 4
+menuOrder: 5
 description: Deploy your service to the specified provider
 layout: Doc
 -->
@@ -10,7 +10,7 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy)
 <!-- DOCS-SITE-LINK:END -->
 
-# Deploy
+# AWS - deploy
 
 The `sls deploy` command deploys your entire service via CloudFormation.  Run this command when you have made infrastructure changes (i.e., you edited `serverless.yml`).  Use `serverless deploy function -f myFunction` when you have made code changes and you want to quickly upload your updated code to AWS Lambda.
 
@@ -21,12 +21,12 @@ serverless deploy
 ## Options
 - `--stage` or `-s` The stage in your service that you want to deploy to.
 - `--region` or `-r` The region in that stage that you want to deploy to.
-- `--noDeploy` or `-n` Skips the deployment steps and leaves artifacts in the `.serverless` directory
+- `--path` or `-p` path to a pre-packaged directory and skip packaging step.
 - `--verbose` or `-v` Shows all stack events during deployment, and display any Stack Output.
 
 ## Artifacts
 
-After the `serverless deploy` command runs all created deployment artifacts are placed in the `.serverless` folder of the service.
+After the `serverless deploy` command runs, the framework runs `serverless package` in the background first then deploys the generated package.
 
 ## Examples
 
@@ -48,12 +48,10 @@ serverless deploy --stage production --region eu-central-1
 With this example we've defined that we want our service to be deployed to the `production` stage in the region
 `eu-central-1`.
 
-## Provided lifecycle events
-- `deploy:cleanup`
-- `deploy:initialize`
-- `deploy:setupProviderConfiguration`
-- `deploy:createDeploymentArtifacts`
-- `deploy:compileFunctions`
-- `deploy:compileEvents`
-- `deploy:deploy`
-- `deploy:function:deploy`
+### Deployment from a pre-packaged directory
+
+```bash
+serverless deploy --path /path/to/package/directory
+```
+
+With this example, the packaging step will be skipped and the framework will start deploying the package from the `/path/to/package/directory` directory.

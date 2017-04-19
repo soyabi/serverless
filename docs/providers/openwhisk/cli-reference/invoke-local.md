@@ -10,13 +10,15 @@ layout: Doc
 ### [Read this on the main serverless docs site](https://www.serverless.com/framework/docs/providers/openwhisk/cli-reference/invoke-local)
 <!-- DOCS-SITE-LINK:END -->
 
-# Invoke Local
+# OpenWhisk - Invoke Local
 
-This runs your code locally by emulating the Apache OpenWhisk environment. Please keep in mind, it's not a 100% perfect emulation, there may be some differences, but it works for the vast majority of users. 
+This runs your code locally by emulating the Apache OpenWhisk environment. Please keep in mind, it's not a 100% perfect emulation, there may be some differences, but it works for the vast majority of users.
 
 ```bash
 serverless invoke local --function functionName
 ```
+
+__*Please note that only the JavaScript and Python runtimes are supported with this command.*__
 
 ## Options
 
@@ -60,4 +62,4 @@ This example will pass the json data in the `lib/data.json` file (relative to th
 
 ### Limitations
 
-Currently, `invoke local` only supports the NodeJs
+Currently, `invoke local` only supports the NodeJs and Python runtimes.
